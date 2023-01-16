@@ -11,3 +11,11 @@ export interface IView {
 }
 
 export type ViewsType = { [key in PossiblePaths]: IView }
+
+/* CALENDAR */
+
+export interface CustomEvent extends Event {
+  user: {
+    name: string
+  }
+}
